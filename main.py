@@ -1,15 +1,23 @@
 def main():
     while True:
         print("Welcome to My Application!")
-        print("1. Calculator")
-        choice = input("Enter your choice:")
+        print("1. Calculator")#feature z
+        print("2. Guessing Game")#feature z
+        print("3. Password Generator")#feature z
+        print("4. Exit") 
+        choice = input("Enter your choice (1-4): ")
 
         if choice == "1":
             calculator()
-
+        elif choice == "2":
+            guessing_game()
+        elif choice == "3":
+            password_generator()
+        elif choice == "4":
+            print("Goodbye!")
+            break
         else:
             print("Invalid choice. Please try again.")
-
 
 def calculator():
     print("CALCULATOR")
