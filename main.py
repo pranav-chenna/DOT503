@@ -35,6 +35,13 @@ def calculator():
     else:
         print("Invalid operation. Please try again.")
 
+def password_generator(): #feature-y
+    length = int(input("Enter the length of the password: "))
+    characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+"
+    password = ""
+    for i in range(length):
+        password += random.choice(characters)
+    print("Your password is:", password)
 
 if __name__ == '__main__':
     import random
