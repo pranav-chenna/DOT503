@@ -35,6 +35,16 @@ def calculator():
     else:
         print("Invalid operation. Please try again.")
 
+#feature y
+def password_generator():
+    length = int(input("Enter the length of the password: "))
+    characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+"
+    password = ""
+    for i in range(length):
+        password += random.choice(characters)
+    print("Your password is:", password)
+#feature y
+
 #feature-x
 def guessing_game():
     print("GUESSING GAME")
