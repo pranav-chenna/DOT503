@@ -44,6 +44,25 @@ def password_generator():
         password += random.choice(characters)
     print("Your password is:", password)
 #feature y
+
+#feature-x
+def guessing_game():
+    print("GUESSING GAME")
+    number = random.randint(1, 10)
+    tries = 0
+    while tries < 3:
+        guess = int(input("Guess a number between 1 and 10: "))
+        tries += 1
+        if guess == number:
+            print("Congratulations, you guessed the number!")
+            break
+        elif guess < number:
+            print("Too low, try again.")
+        else:
+            print("Too high, try again.")
+    else:
+        print("Sorry, you ran out of tries. The number was", number)
+#feature-x
 if __name__ == '__main__':
     import random
 
