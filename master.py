@@ -28,7 +28,7 @@ def calculator():
     print("3. Multiply")
     print("4. Divide")
     print("5. Modulus")
-    operation = input("Enter the operation (1-4): ")
+    operation = input("Enter the operation (1-5): ")
     if operation == "1":
         result = num1 + num2
         print("The sum is:", result)
