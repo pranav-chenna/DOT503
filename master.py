@@ -38,7 +38,7 @@ def calculator():
         result = num1 * num2
         print("The product is:", result)
     elif operation == "4":
-        result = num1 / num2
+        result = 1+(num1 / num2)
         print("The quotient is:", result)
     else:
         print("Invalid operation. Please try again.")
