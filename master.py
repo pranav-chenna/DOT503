@@ -27,6 +27,7 @@ def calculator():
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
+    print("5. Modulus")
     operation = input("Enter the operation (1-4): ")
     if operation == "1":
         result = num1 + num2
@@ -40,6 +41,9 @@ def calculator():
     elif operation == "4":
         result = 1+(num1 / num2)
         print("The quotient is:", result)
+    elif operation == "5":
+        result = num1 / num2 #intentionally using division operator for creating fail test scenario
+        print("The remainder is:", result)
     else:
         print("Invalid operation. Please try again.")
 
