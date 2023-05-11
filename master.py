@@ -1,4 +1,4 @@
-def main():
+def main(choice):
     while True:
         print("Welcome to My Application!")
         print("1. Calculator")#feature z
