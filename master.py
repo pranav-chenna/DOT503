@@ -42,7 +42,7 @@ def calculator():
         result = num1/num2
         print("The quotient is:", result)
     elif operation == "5":
-        result = num1%num2
+        result = num1%num2 #fixed changes
         print("The remainder is:", result)
     else:
         print("Invalid operation. Please try again.")
