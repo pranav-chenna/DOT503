@@ -76,6 +76,12 @@ def guessing_game():
         print("Sorry, you ran out of tries. The number was", number)
 #feature-x
 if __name__ == '__main__':
+
     import random
+
+    if len(sys.argv) > 1:
+        choice = sys.argv[1]
+    else:
+        choice = ""
 
     main(choice)
