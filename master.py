@@ -1,12 +1,12 @@
-import sys
-def main(choice):
+
+def main():
     while True:
         print("Welcome to My Application!")
         print("1. Calculator")#feature z
         print("2. Guessing Game")#feature z
         print("3. Password Generator")#feature z
         print("4. Exit") 
-        choice = input("Enter your choice (1-4): ")
+        choice = 4
 
         if choice == "1":
             calculator()
@@ -80,9 +80,4 @@ if __name__ == '__main__':
 
     import random
 
-    if len(sys.argv) > 1:
-        choice = sys.argv[1]
-    else:
-        choice = ""
-
-    main(choice)
+    main()
