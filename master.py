@@ -39,10 +39,10 @@ def calculator():
         result = num1 * num2
         print("The product is:", result)
     elif operation == "4":
-        result = 1+(num1 / num2)
+        result = num1 / num2
         print("The quotient is:", result)
     elif operation == "5":
-        result = num1 / num2 #intentionally using division operator for creating fail test scenario
+        result = num1 % num2
         print("The remainder is:", result)
     else:
         print("Invalid operation. Please try again.")
