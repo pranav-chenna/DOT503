@@ -6,7 +6,7 @@ def main():
         print("2. Guessing Game")#feature z
         print("3. Password Generator")#feature z
         print("4. Exit") 
-        choice = 4
+        choice = input("Enter your choice (1-4): ")
 
         if choice == "1":
             calculator()
